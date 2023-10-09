@@ -1,4 +1,15 @@
-body {
-    background-color: rgb(90, 90, 90);
-    font-family: "poppins";
+/* Vars */
+:root {
+    --color-principal: #ffffff;
+    --color-secundary: #04B4E0;
+
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-title: #222222;
+    --color-subtitle:#888888;
+    --color-text: #555;
 }
+
+/* Estilos generales */
