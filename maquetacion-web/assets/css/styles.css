@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     background-color: rgb(185, 183, 183);
     width: 60%;
-    min-height: 32rem;
+    min-height: 40rem;
     box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
     border-radius: 6rem;
     padding: 2rem 0;
@@ -276,10 +276,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__overlay {
+    justify-content: space-around;
     position: absolute;
     right: 0;
     opacity: 1;
-    padding: 0.1rem 1rem;
+    padding: 0.1rem 1.2rem;
     display: block;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
