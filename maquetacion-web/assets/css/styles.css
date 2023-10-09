@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .layout {
     position: relative;
     min-width: 1100px;
-    width: 75%;
+    width: 80%;
     height: 80vh;
     min-height: 60vh;
     margin: 10vh auto;
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     display: inline-block;
     width: 18rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
     z-index: 1;
 }
 
@@ -135,8 +135,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .user-info__name {
-    margin-top: 2.6rem;
-    font-size: 3.2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--color-principal);
 }
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 .user-info__btn {
     padding: 3rem;
     padding-bottom: 1.3rem;
-    padding-top: 1.3rem;
+    padding-top: 1rem;
     border: 2px solid var(--color-principal);
     border-radius: 3.2rem;
     color: var(--color-principal);
@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__name {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     color: rgb(235, 235, 235);
     opacity: 0.7;
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__icon {
-    color: rgb(255, 255, 255)55, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 2.8rem;
     transform:all 300ms ease-in-out;
     flex-grow: 4;
