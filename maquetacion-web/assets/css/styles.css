@@ -1,4 +1,5 @@
 /* Vars */
+
 :root {
     --color-principal: #ffffff;
     --color-secundary: #04B4E0;
@@ -7,9 +8,149 @@
     --color-transparent: transparent;
 
     --color-icon: #B5B6B7;
-    --color-title: #222222;
-    --color-subtitle:#888888;
+    --color-titles: #222222;
+    --color-subtitles:#888888;
     --color-text: #555;
+    --color-good-purp: #321C8A;
 }
 
-/* Estilos generales */
+/* Estilos Generales */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+/* Imagen Fondo */
+
+body {
+    background-image: url("./img/fondo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -120px;
+    background-color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-titles);
+}
+
+/* Estructura Principal */
+
+.layout {
+    position: relative;
+    min-width: 1290px;
+    width: 75%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-areas: "aside content";
+    grid-template-columns: 30% 70%;
+
+    /*Sombra layout*/
+
+    border-radius: 4rem;
+    box-shadow: 0 3rem 10rem rgb(195, 0, 255);
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}
+
+/* Barra Lateral */
+
+.layout__aside {
+    grid-area: aside;
+    border-radius: 4rem 0 0 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-border-radius: 4rem 0 0 4rem;
+    -moz-border-radius: 4rem 0 0 4rem;
+    -ms-border-radius: 4rem 0 0 4rem;
+    -o-border-radius: 4rem 0 0 4rem;
+}
+
+.aside__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    min-height: 100%;
+    min-width: 30rem;
+
+    background-color: var(--color-good-purp);
+    color: var(--color-principal);
+}
+
+.user-info__container-image {
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    margin-top: 7rem;
+    z-index: 1;
+}
+
+.user-info__image {
+    width: 100%;
+    background-color: var(--color-principal);
+    border: 3px solid var(--color-principal);
+    border-radius: 20rem;
+    -webkit-border-radius: 20rem;
+    -moz-border-radius: 20rem;
+    -ms-border-radius: 20rem;
+    -o-border-radius: 20rem;
+}
+
+.user-info__container-image::after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    background-image: -webkit-repeating-radial-gradient(center center, #000000, #ff0000 25px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+    border-radius: 30rem;
+    -webkit-border-radius: 30rem;
+    -moz-border-radius: 30rem;
+    -ms-border-radius: 30rem;
+    -o-border-radius: 30rem;
+    opacity: 0.4;
+}
+
+.user-info__name {
+    margin-top: 2.6rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+.user-info__job {
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: var(--color-principal);
+}
+
+.layout__menu {
+    display: none !important;
+}
+
+/* Contenedor Principal */
+
+.layout__content {
+    grid-area: content;
+    background-color: var(--color-principal);
+}
