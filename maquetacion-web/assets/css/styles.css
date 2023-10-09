@@ -27,16 +27,6 @@ body {
     font-size: 1.5rem;
     background-color: var(--color-background);
     color: var(--color-text);
-    overflow: hidden;
-}
-
-/* Imagen Fondo */
-
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -20px -120px;
-    background-color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
