@@ -47,27 +47,24 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-areas: "aside content";
     grid-template-columns: 30% 70%;
     background: rgba(255, 255, 255, 0.082);
-    border-radius: 0 4rem 4rem 4rem;
+    border-radius: 4rem 4rem 4rem 4rem;
     border-top: 0.3rem solid rgb(218, 216, 216);
     border-left: 0.2rem solid rgb(180, 179, 179);
     backdrop-filter: blur(0.5rem);
     transition: transform 0.9s ease;
 
-    /*Sombralayout*/
-
+    /* Sombra layout */
     border-radius: 0 4rem 4rem 4rem;
-    box-shadow: -2rem 2rem 5rem rgb(69, 1, 90);
+    box-shadow: 0 1.5rem 3rem rgba(255, 255, 255, 0.726);
+    -webkit-border-radius: 4rem 4rem 4rem 4rem;
 }
 
 .layout:hover{
     transform: translatey(-1.5rem);
     transition: transform 0.9s ease;
     opacity: 1;
-    box-shadow: -2rem 2rem 5rem rgb(42, 1, 80);
-    -webkit-transition: transform 0.9s ease;
-    -moz-transition: transform 0.9s ease;
-    -ms-transition: transform 0.9s ease;
-    -o-transition: transform 0.9s ease;
+    box-shadow: 0 1.5rem 3rem rgb(255, 255, 255);
+    transition-duration: 400ms;
 }
 
 /* Barra Lateral */
@@ -101,8 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .user-info__image {
     width: 100%;
-    border: 2px solid rgb(139, 139, 139);
-    box-shadow: -0rem 0rem 2rem rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0rem 0rem 6rem 4rem rgb(0, 0, 0);
     border-radius: 20rem;
 }
 
@@ -142,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .links__social {
-    margin-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
 
     display: flex;
@@ -150,18 +147,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social__option {
-    height: 3rem;
-    width: 3rem;
-    font-size: 1.8rem;
+    height: 3.1rem;
+    width: 3.7rem;
+    font-size: 2.7rem;
     line-height: 3.2rem;
     opacity: 0.6;
-    border-radius: 3rem;
     transition: all 200ms linear;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+}
+
+#linked {
+    box-shadow: 0rem 0rem 0.2rem 0.2rem rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+#linked:hover {
+    background-color: #0A66C2;
+    filter: blur(0.4px);
+}
+
+#github {
+    box-shadow: 0rem 0rem 0.2rem 0.2rem rgb(255, 255, 255);
+    border-radius: 1.5rem;
+
+}
+
+#github:hover {
+    background-color: rgb(0, 0, 0);
+    filter: blur(0.4px);
+}
+
+#ig {
+    box-shadow: 0rem 0rem 0.2rem 0.2rem rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+#ig:hover {
+    background-color: #D03F82;
+    filter: blur(0.4px);
 }
 
 .social__option:hover {
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.09);
 }
 
 .user.info__buttons {
@@ -184,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-principal);
     color: var(--color-titles);
     border: 1px solid black;
+
 }
 
 .user-info__footer {
@@ -250,12 +279,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgb(185, 183, 183);
     width: 60%;
     min-height: 40rem;
-    box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
     border-radius: 6rem;
     padding: 2rem 0;
     margin-left: 2.5rem;
-    box-shadow: 0 6rem 5rem rgb(69, 1, 90);
-    
+    /*bluebox-shadow: 0 0 0.5rem 0.6rem #253158;
+    */box-shadow: 0 0 1.5rem 0.6rem #125345;
 }
 
 .menu__icon {
@@ -279,14 +307,14 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-around;
     position: absolute;
     right: 0;
-    opacity: 1;
+    opacity: 0;
     padding: 0.1rem 1.2rem;
     display: block;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     white-space: nowrap;
     transition: all 500ms ease-in-out;
-    box-shadow: -0.7rem 0 4rem rgb(255, 255, 255);
+    box-shadow: 0 0rem 1.5rem 0.5rem #000000;
     border-radius: 4rem;
     border: 1px solid rgb(138, 138, 138);
 }
