@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #linked {
-    box-shadow: 0rem 0rem 0.2rem 0.2rem rgb(255, 255, 255);
+    box-shadow: 0rem 0rem 0.2rem 0.2rem #0A66C2;
     border-radius: 1rem;
 }
 
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #ig {
-    box-shadow: 0rem 0rem 0.2rem 0.2rem rgb(255, 255, 255);
+    box-shadow: 0rem 0rem 0.2rem 0.2rem #D03F82;
     border-radius: 1rem;
 }
 
