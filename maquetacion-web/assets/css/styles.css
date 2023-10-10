@@ -43,36 +43,35 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 60vh;
     margin: 10vh auto;
     display: grid;
-    opacity: 0.8;
     grid-template-areas: "aside content";
     grid-template-columns: 30% 70%;
     background: rgba(255, 255, 255, 0.082);
-    border-radius: 4rem 4rem 4rem 4rem;
     border-top: 0.1rem solid rgb(218, 216, 216);
     border-left: 0.1rem solid rgb(180, 179, 179);
-    backdrop-filter: blur(0.5rem);
-    transition: transform 0.9s ease;
-    /*Sombralayout*/border-radius: 0 4rem 4rem 4rem;
-    box-shadow: 0 1.5rem 3rem rgba(255, 255, 255, 0.726);
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    /* Sombra layou t*/
+
+    box-shadow: inset 18px 18px 8px rgba(0, 0, 0, 0.2),
+    inset -10px -18px 8px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.1rem) saturate(200%);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 3.2rem;
+    border: 1px solid rgb(156, 154, 154);
 }
 
 .layout:hover{
     transform: translatey(-1.5rem);
-    transition: transform 0.9s ease;
     opacity: 1;
-    box-shadow: 0 1.5rem 3rem rgb(255, 255, 255);
+    box-shadow: 0 0.1rem 2rem rgb(255, 255, 255);
     transition-duration: 400ms;
+    backdrop-filter: blur(0.9rem) saturate(200%);
+
 }
 
 /* Barra Lateral */
 
 .layout__aside {
     grid-area: aside;
-    border-radius: 0 4rem 4rem 4rem;
+    border-radius: 5rem;
     overflow: auto;
     overflow-x: hidden;
 }
