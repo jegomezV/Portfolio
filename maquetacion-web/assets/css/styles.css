@@ -91,6 +91,10 @@ h6 {
     color: var(--color-principal);
 }
 
+.aside__user-info:hover {
+
+}
+
 .user-info__container-image {
     position: relative;
     display: inline-block;
@@ -256,7 +260,6 @@ h6 {
 
 .content__page:hover{
     border: 1px solid rgb(168, 168, 168);
-    filter: blur(1rem);
 }
 
 .page__name {

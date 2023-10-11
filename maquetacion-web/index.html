@@ -128,29 +128,13 @@
     <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-20065e70-267b-f412-208e-18ded04eacc7" crossorigin></script>
     <script src="assets/css/styles.js"></script>
     <script type="assets/css/styles.js" src="vanilla-tilt.js"></script>
+
     <script>
-        // Selecciona todos los elementos con la clase "layout__aside" y no aplicamos VanillaTilt a la clase "layout__menu"
-        const elementos = document.querySelectorAll(".layout");
-
-        elementos.forEach(function(elemento) {
-            if (!elemento.classList.contains("layout__menu")) {
-                VanillaTilt.init(elemento, {
-                    max: 7,
-                    speed: 20,
-                    glare: true
-                });
-            }
-        });
+        VanillaTilt.init(document.querySelector(".layout"), {
+		max: 7,
+		speed: 20,
+        glare: true,
+	});
     </script>
-
-</body>
-</html>
-En este código, hemos agregado el nuevo script en la parte inferior del documento HTML que selecciona todos los elementos con la clase .layout__aside y aplica VanillaTilt a ellos, excepto a los que tienen la clase .layout__menu. Esto evitará que el efecto se aplique a los elementos de menú.
-
-
-
-
-
-
 </body>
 </html>
