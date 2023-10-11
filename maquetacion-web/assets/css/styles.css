@@ -9,7 +9,7 @@
 
     --color-icon: #B5B6B7;
     --color-titles: #222222;
-    --color-subtitles:#888888;
+    --color-subtitles: #888888;
     --color-text: #555;
     --color-good-purp: #321C8A;
 }
@@ -25,11 +25,15 @@ body {
     height: 100%;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    background-color: var(--color-background);
     color: var(--color-text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-titles);
 }
 
@@ -45,25 +49,24 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-areas: "aside content";
     grid-template-columns: 30% 70%;
-    background: rgba(255, 255, 255, 0.082);
     border-top: 0.1rem solid rgb(218, 216, 216);
     border-left: 0.1rem solid rgb(180, 179, 179);
     /* Sombra layou t*/
 
-    box-shadow: inset 18px 18px 8px rgba(0, 0, 0, 0.2),
-    inset -10px -18px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 9px 9px 18px #5c5c5c,
+            inset -9px -9px 18px #5c5c5c;
     backdrop-filter: blur(0.1rem) saturate(200%);
-    background-color: rgba(0, 0, 0, 0);
     border-radius: 3.2rem;
-    border: 1px solid rgb(156, 154, 154);
+    border: 1px solid rgb(109, 109, 109);
 }
 
-.layout:hover{
+.layout:hover {
     transform: translatey(-1.5rem);
     opacity: 1;
-    box-shadow: 0 0.1rem 2rem rgb(255, 255, 255);
+    box-shadow:  19px 19px 38px #383838,
+            -19px -19px 38px #2e2e2e;
     transition-duration: 400ms;
-    backdrop-filter: blur(0.9rem) saturate(200%);
+    backdrop-filter: blur(0.4rem) saturate(200%);
 
 }
 
@@ -98,8 +101,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .user-info__image {
     width: 100%;
-    border: 2px solid rgb(255, 255, 255);
-    box-shadow: 0rem 0rem 6rem 3.2rem rgb(0, 0, 0);
+
+    box-shadow: 0rem 0rem 4rem 1rem rgb(0, 0, 0);
     border-radius: 20rem;
 }
 
@@ -109,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .user-info__container-image::after {
-    content:"";
+    content: "";
     position: absolute;
     top: 0px;
     left: 10%;
@@ -125,13 +128,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--color-principal);
+    color: rgb(0, 0, 0);
 }
 
 .user-info__job {
     font-size: 1.7rem;
     font-weight: 200;
-    color: var(--color-principal);
+    color: rgb(51, 51, 51);
 }
 
 .user-info__links {
@@ -151,10 +154,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 3.7rem;
     font-size: 2.7rem;
     line-height: 3.2rem;
-    opacity: 0.6;
     transition: all 200ms linear;
     border-radius: 1.5rem;
     margin-right: 1rem;
+    color: rgb(0, 0, 0);
 }
 
 #linked {
@@ -165,31 +168,38 @@ h1, h2, h3, h4, h5, h6 {
 #linked:hover {
     background-color: #0A66C2;
     filter: blur(0.4px);
+    transform: translatey(-0.3rem);
+    color: white;
 }
 
 #github {
     box-shadow: 0rem 0rem 0.2rem 0.2rem rgb(255, 255, 255);
     border-radius: 1.5rem;
-
 }
 
 #github:hover {
     background-color: rgb(0, 0, 0);
     filter: blur(0.4px);
+    transform: translatey(-0.3rem);
+    color: white;
 }
 
 #ig {
-    box-shadow: 0rem 0rem 0.2rem 0.2rem #D03F82;
+    box-shadow: 0rem 0rem 0.2rem 0.2rem #e24a91;
     border-radius: 1rem;
 }
 
 #ig:hover {
-    background-color: #D03F82;
+    background-color: #ffffff;
     filter: blur(0.4px);
+    transform: translatey(-0.3rem);
+    box-shadow: 0rem 0rem 0.2rem 0.2rem #e24a91;
+    color: #ff0077;
 }
 
 .social__option:hover {
     opacity: 1;
+    translate: y1px;
 }
 
 .user.info__buttons {
@@ -212,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-principal);
     color: var(--color-titles);
     border: 1px solid black;
-
+    transform: translatey(-0.4rem);
 }
 
 .user-info__footer {
@@ -225,10 +235,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Contenedor Principal */
 
 .content__page {
-    background-color:rgba(85, 85, 85, 0.356);
+    background-color: rgba(85, 85, 85, 0.356);
     min-height: 100%;
     border-radius: 3.2rem;
-    border: 1px solid rgb(156, 154, 154);
+    border: 1px solid rgb(134, 134, 134);
 
     display: flex;
     flex-direction: column;
@@ -241,11 +251,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     color: rgb(235, 235, 235);
     opacity: 0.7;
-    transition-duration: 400ms;
+    transition-duration: 500ms;
 }
 
 .page__name:hover {
     opacity: 1;
+    transform: translatey(-0.2rem);
+    color: black;
 }
 
 .page__job {
@@ -253,10 +265,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
     opacity: 0.5;
     transition-duration: 400ms;
-    color: #00ffc8;
+    color: rgb(0, 255, 200);
 }
 
-.page__job:hover{
+.page__job:hover {
     opacity: 1;
     color: black;
 }
@@ -274,11 +286,12 @@ h1, h2, h3, h4, h5, h6 {
 .menu__list {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     flex-grow: 4;
     justify-content: space-between;
+    
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 250, 250);
     width: 60%;
     opacity: 2;
     min-height: 40rem;
@@ -287,13 +300,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 0;
     margin-left: 2.5rem;
     /*bluebox-shadow: 0 0 0.5rem 0.6rem #253158;
-    */box-shadow: 0 0 1.5rem 0.6rem #125345;
+    */
+    box-shadow: 0 0 1.5rem 0.6rem #125345;
+}
+
+.menu__list:hover {
+    box-shadow: 0 0 1.5rem 0.6rem #009273;
 }
 
 .menu__icon {
     color: rgb(126, 126, 126);
     font-size: 2.8rem;
-    transform:all 300ms ease-in-out;
+    transform: all 300ms ease-in-out;
     flex-grow: 4;
 }
 
@@ -304,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__icon:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .menu__overlay {
@@ -314,13 +332,23 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     padding: 0.1rem 1.2rem;
     display: block;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    background-color: rgb(88, 87, 87);
     white-space: nowrap;
     transition: all 500ms ease-in-out;
-    box-shadow: 0 0rem 1.5rem 0.7rem #125345;
-    border-radius: 4rem;
-    border: 1.5px solid #029474;
+    box-shadow: 0 0rem 1.5rem 0.7rem #1fa185;
+    border-radius: .8em;
+    border: 1px solid #02ac87;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: inherit;
+    text-transform: uppercase;
+    z-index: 1;
+    -webkit-border-radius: .8em;
+    -moz-border-radius: .8em;
+    -ms-border-radius: .8em;
+    -o-border-radius: .8em;
 }
 
 .menu__option:hover .menu__overlay {
