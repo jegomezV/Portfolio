@@ -22,7 +22,7 @@
           if (e.active) for (var t in  e.closest) g.beginPath(),
           g.moveTo(e.x, e.y),
           g.lineTo(e.closest[t].x, e.closest[t].y),
-          g.strokeStyle = "rgb(0, 0, 0," + e.active + ")",
+          g.strokeStyle = "rgb(255, 255, 255," + e.active + ")",
           g.stroke()
       } (w[e]),
       w[e].circle.draw();
@@ -34,7 +34,7 @@
       o.radius = t || null,
       o.color = n || null,
       this.draw = function() {
-          o.active && (g.beginPath(), g.arc(o.pos.x, o.pos.y, o.radius, 0, 2 * Math.PI, !1), g.fillStyle = "rgba(0, 0, 0" + o.active + ")", g.fill())
+          o.active && (g.beginPath(), g.arc(o.pos.x, o.pos.y, o.radius, 0, 2 * Math.PI, !1), g.fillStyle = "rgba(250, 250, 250," + o.active + ")", g.fill())
       }
   }
   function x(e, t) {
