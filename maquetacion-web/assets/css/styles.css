@@ -1,23 +1,21 @@
-/* Vars */
-
+/* Variables */
 :root {
-    --color-principal: #ffffff;
-    --color-secundary: #04B4E0;
+    --color-principal: #ffffff;     /* Color principal */
+    --color-secundary: #04B4E0;    /* Color secundario */
 
-    --color-background: #F2F7F9;
-    --color-transparent: transparent;
+    --color-background: #F2F7F9;  /* Color de fondo */
+    --color-transparent: transparent; /* Color transparente */
 
-    --color-icon: #B5B6B7;
-    --color-titles: #222222;
-    --color-subtitles: #888888;
-    --color-text: #555;
-    --color-good-purp: #321C8A;
+    --color-icon: #B5B6B7;        /* Color de íconos */
+    --color-titles: #222222;      /* Color de títulos */
+    --color-subtitles: #888888;   /* Color de subtítulos */
+    --color-text: #555;           /* Color de texto */
+    --color-good-purp: #321C8A;   /* Otro color */
 }
 
 /* Estilos Generales */
-
 html {
-    font-size: 10px;
+    font-size: 10px;    /* Tamaño de fuente base */
 }
 
 body {
@@ -25,24 +23,18 @@ body {
     height: 100%;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    color: var(--color-text);
+    color: var(--color-text);   /* Color del texto */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--color-titles);
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-titles);   /* Color de los títulos */
 }
 
 /* Estructura Principal */
-
 .layout {
     position: relative;
-    min-width: 1100px;
-    width: 80%;
+    min-width: 1290px;
+    width: 75%;
     height: 80vh;
     min-height: 60vh;
     margin: 10vh auto;
@@ -51,10 +43,8 @@ h6 {
     grid-template-columns: 30% 70%;
     border-top: 0.1rem solid rgb(218, 216, 216);
     border-left: 0.1rem solid rgb(180, 179, 179);
-    /* Sombra layou t*/
-
     box-shadow: inset 5px 5px 1rem rgb(0, 46, 36),
-            inset -5px -5px 1rem rgb(0, 46, 36);
+                inset -5px -5px 1rem rgb(0, 46, 36);
     backdrop-filter: blur(0.1rem) saturate(200%);
     border-radius: 3.2rem;
     border: 1px solid rgb(26, 26, 26);
@@ -64,14 +54,12 @@ h6 {
     transform: translatey(-1.5rem);
     opacity: 1;
     box-shadow: 5px 5px 3rem rgb(0, 46, 36),
-            -4px -4px 3rem rgb(0, 46, 36);
+                -4px -4px 3rem rgb(0, 46, 36);
     transition-duration: 400ms;
     backdrop-filter: blur(0.1rem) saturate(200%);
-
 }
 
 /* Barra Lateral */
-
 .layout__aside {
     grid-area: aside;
     border-radius: 5rem;
@@ -84,15 +72,9 @@ h6 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     min-height: 100%;
     min-width: 30rem;
-
     color: var(--color-principal);
-}
-
-.aside__user-info:hover {
-
 }
 
 .user-info__container-image {
@@ -123,12 +105,12 @@ h6 {
     z-index: -1;
     width: 100%;
     height: 100%;
-
     background-size: 0.6rem 0.6rem;
     border-radius: 30rem;
 }
 
 .user-info__name {
+    cursor: default;
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: bold;
@@ -136,13 +118,14 @@ h6 {
 }
 
 .user-info__job {
+    cursor: default;
     font-size: 1.7rem;
     font-weight: 200;
     color: #808080;
     transition: all 500ms;
 }
 
-.user-info__job:hover{
+.user-info__job:hover {
     color: rgb(0, 255, 200);
     transition-duration: 400ms;
 }
@@ -154,7 +137,6 @@ h6 {
 .links__social {
     margin-top: 3rem;
     text-align: center;
-
     display: flex;
     flex-direction: row;
 }
@@ -238,11 +220,11 @@ h6 {
 }
 
 .user-info__footer {
+    cursor: default;
     position: absolute;
     bottom: 2rem;
     font-size: 1.2rem;
 }
-
 
 /* Contenedor Principal */
 
@@ -251,18 +233,18 @@ h6 {
     min-height: 100%;
     border-radius: 3.2rem;
     border: 1px solid rgb(19, 19, 19);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.content__page:hover{
+.content__page:hover {
     border: 1px solid rgb(168, 168, 168);
 }
 
 .page__name {
+    cursor: default;
     font-size: 5rem;
     margin-bottom: 1rem;
     color: rgb(235, 235, 235);
@@ -285,6 +267,7 @@ h6 {
 }
 
 .page__job {
+    cursor: default;
     font-size: 2.1rem;
     font-weight: lighter;
     opacity: 0.5;
@@ -297,7 +280,7 @@ h6 {
     color: black;
 }
 
-/*Menu dsociale navegacion lateral*/
+/* Menú Social Navegación Lateral */
 
 .layout__menu {
     display: block;
@@ -307,13 +290,13 @@ h6 {
     min-width: 11rem;
 }
 
+/* Menú lateral efects*/
 .menu__list {
     position: relative;
     display: flex;
     flex-direction:column;
     flex-grow: 4;
     justify-content: space-between;
-    
     align-items: center;
     background-color: rgb(0, 0, 0);
     width: 60%;
@@ -323,8 +306,6 @@ h6 {
     border-radius: 6rem;
     padding: 2rem 0;
     margin-left: 2.5rem;
-    /*bluebox-shadow: 0 0 0.5rem 0.6rem #253158;
-    */
     box-shadow: 0 0 1.5rem 0.6rem #125345;
 }
 

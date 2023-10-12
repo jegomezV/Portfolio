@@ -594,3 +594,4 @@ if (typeof document !== "undefined") {
 return VanillaTilt;
 
 }());
+

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
+    <link rel=icon type=image/x-icon href="./assets/css/fonts/img/maletin1.png">
+    
+    <!-- Cargando estilos -->
     <link rel="stylesheet" href="assets/css/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fonts/poppins/poppins.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -12,38 +13,46 @@
     <link rel="stylesheet" href="./assets/css/fondo.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
-    <title>Portafolio</title>
+    <!-- Título de la página -->
+    <title>
+        Juan G.
+    </title>
 </head>
 
-<body id=large-header class="large-header"> <div id="large-header" class=large-header>
-    <canvas id=demo-canvas></canvas>
+<body id="large-header" class="large-header">
+    <div id="large-header" class="large-header">
+        <!-- Canvas para efecto de fondo -->
+        <canvas id="demo-canvas"></canvas>
     </div>
+    
     <!-- Contenedor principal -->
     <div class="layout">
 
-        <!-- Barra lateral-->
+        <!-- Barra lateral -->
         <aside class="layout__aside">
             <section class="aside__user-info">
-
-                <!--Informacion general-->
+                <!-- Información general del usuario -->
                 <div class="user-info__general">
                     <div class="user-info__container-image">
+                        <!-- Imagen de perfil -->
                         <img src="assets/css/fonts/img/Juano_minify.png" class="user-info__image" alt="foto de perfil" />
                     </div>
+                    <!-- Nombre del usuario -->
                     <h2 class="user-info__name">Juan Eduardo Gomez V</h2>
+                    <!-- Trabajo del usuario -->
                     <h4 class="user-info__job">Software developer</h4>
                 </div>
-
-                <!--Menu de navegacion-->
+                <!-- Menú de navegación -->
                 <nav class="layout__menu">
                     <ul class="menu__list">
+                        <!-- Opciones del menú -->
                         <li class="menu__option">
                             <a href="index.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-house"></i>
                                 <span class="menu__overlay">Home</span>
                             </a>
                         </li>
-
+                        <!-- Otras opciones del menú -->
                         <li class="menu__option">
                             <a href="sobre-mi.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-user"></i>
@@ -51,12 +60,14 @@
                             </a>
                         </li>
 
+                        <!--
                         <li class="menu__option">
                             <a href="estudios.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-graduation-cap"></i>
                                 <span class="menu__overlay">Estudios</span>
                             </a>
                         </li>
+                        -->
 
                         <li class="menu__option">
                             <a href="portafolio.html" class="menu__link">
@@ -72,69 +83,85 @@
                             </a>
                         </li>
 
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
+                </ul>
+            </nav>
 
-                <!--Links redes sociales-->
+                <!-- Enlaces a redes sociales -->
                 <div class="user-info__links">
                     <ul class="links__social">
-
+                        <!-- Enlace a LinkedIn -->
                         <li class="social__option" id="linked">
                             <a href="#" class="social__link">
                                 <i class="social__icon fa-brands fa-linkedin"></i>
                             </a>
                         </li>
-                        
+                        <!-- Enlace a GitHub -->
                         <li class="social__option" id="github">
                             <a href="#" class="social__link">
                                 <i class="social__icon fa-brands fa-github"></i>
                             </a>
                         </li>
-                        
+                        <!-- Enlace a Instagram -->
                         <li class="social__option" id="ig">
                             <a href="#" class="social__link">
                                 <i class="social__icon fa-brands fa-instagram"></i>
                             </a>
-                        </li>                        
-
+                        </li>
                     </ul>
                 </div>
 
-                <!--Boton del curriculum-->
+                <!-- Botón para descargar CV -->
                 <div class="user-info__buttons">
                     <a href="#" class="user-info__btn">Descargar Cv</a>
                 </div>
 
-                <!--Pie de pagina-->
+                <!-- Pie de página -->
                 <footer class="user-info__footer">
                     &copy; 2023 Juan Eduardo Gomez V.  WEB
                 </footer>
-
             </section>
         </aside>
+
+        <!-- Menu responsive -->
+        
 
         <!-- Contenido principal -->
         <main class="layout__content">
             <section class="content__page">
+                <!-- Nombre del usuario -->
                 <h1 class="page__name">Juan Eduardo Gomez V</h1>
+                <!-- Trabajo del usuario -->
                 <h2 class="page__job">Desarrollador Web.</h2>
             </section>
         </main>
+        
 
+        
     </div>
-    <script src=https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js></script>
-    <script src=https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js></script>
-    <script src=https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js></script>
+    
+    <div class="layout__menu-toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+        <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/css/menu.js" defer></script>
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
     <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-20065e70-267b-f412-208e-18ded04eacc7" crossorigin></script>
     <script src="assets/css/styles.js"></script>
-    <script type="assets/css/styles.js" src="vanilla-tilt.js"></script>
+    <script src="vanilla-tilt.js"></script>
 
+    <!-- Inicialización de VanillaTilt para el efecto en el contenedor principal -->
     <script>
         VanillaTilt.init(document.querySelector(".layout"), {
-		max: 7,
-		speed: 20,
-        glare: true,
-	});
+            max: 7,
+            speed: 20,
+            glare: true,
+        });
     </script>
 </body>
 </html>
