@@ -1,13 +1,1 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-
-    let button = document.querySelector(".layout__menu-toggle");
-    let aside = document.querySelector(".layout__aside");
-
-    button.addEventListener("click", (event) => {
-        let visible = document.querySelector(".layout__aside--visible");
-
-        if(!visible){
-            aside.classList.add("layout__aside--visible");
-        }
-    });
-});
+document.addEventListener("DOMContentLoaded",(e=>{let t=document.querySelector(".layout__menu-toggle"),d=document.querySelector(".layout__aside");t.addEventListener("click",(e=>{document.querySelector(".layout__aside--visible")||d.classList.add("layout__aside--visible")}))}));
